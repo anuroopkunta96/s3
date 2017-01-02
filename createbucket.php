@@ -2,8 +2,11 @@
 
 //copyright 2016 - vCloudMate.guru
 
-//connection string
-include 'connecttoaws.php';
+require '/var/www/html/vendor/autoload.php';
+
+$client = new Aws\S3\S3Client(['version'=>'latest','region'=>'us-east-1'
+]);
+
 
 // Create a unique bucket name
 $bucket = uniqid("mytestcloudbucket123321", true);

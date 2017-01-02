@@ -1,8 +1,11 @@
 <?php
 //Copyright 2016 vCloudMate.guru
 
-//Connection string
-include 'connecttoaws.php';
+require '/var/www/html/vendor/autoload.php';
+
+$client = new Aws\S3\S3Client(['version'=>'latest','region'=>'us-east-1'
+]);
+
 
 //get the bucket name
 $bucket = $_GET["bucket"];
