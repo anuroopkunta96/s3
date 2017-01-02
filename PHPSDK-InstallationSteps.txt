@@ -1,0 +1,5 @@
+Installation of PHP over EC2 Instance via Composer
+a.Install Composer
+    curl -sS https://getcomposer.org/installer | php
+b.Run the Composer command to install the latest stable version of the SDK:
+php composer.phar require aws/aws-sdk-php
