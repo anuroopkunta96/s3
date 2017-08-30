@@ -8,7 +8,7 @@ public class TestBankAccount {
     @Test
     public void testFunds() {
        BankAccount account = new BankAccount(10);
-       double amount = account.debit(500);
+       double amount = account.debit(150);
        Assert.assertEquals(5.0, amount);
     }
 }
